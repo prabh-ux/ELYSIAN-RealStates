@@ -1,16 +1,45 @@
-# React + Vite
+#🏰 ELYSIAN Real Estate
+A Premium Property Discovery & Management Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ELYSIAN is a high-end frontend solution built for luxury real estate brokerages. It focuses on high-fidelity imagery, seamless property filtering, and a conversion-optimized user journey.
 
-Currently, two official plugins are available:
+🚀 [Live Demo Link]
+✨ Key Features
+Dynamic Property Search: Advanced filtering logic for price, location, and property type without page reloads.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+High-End Property Modals: Detailed view-state for amenities, floor plans, and agent information.
 
-## React Compiler
+Conversion Flow: Integrated "Book a Tour" and "Contact Agent" systems.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Bento-Grid Layout: Modern, masonry-style showcase for featured luxury listings.
 
-## Expanding the ESLint configuration
+Mobile-First Design: Fully responsive architecture optimized for high-end mobile browsing.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+Frontend: React.js (Functional Components & Hooks)
+
+Styling: Tailwind CSS (Utility-first framework)
+
+Animations: Framer Motion (Smooth hover effects and page transitions)
+
+Icons: Lucide-React / Phosphor Icons
+
+📂 Project Structure
+Plaintext
+
+src/
+├── components/       # Search Filters, Property Cards, Booking Modals
+├── pages/            # Home, Property Listings, Saved Homes
+├── data/             # Mock property database (JSON)
+└── assets/           # High-resolution architectural photography
+⚙️ Installation
+git clone https://github.com/prabh-ux/elysian-realestate.git
+
+npm install
+
+npm run dev
+
+💼 Freelance Inquiry
+This project demonstrates my ability to build high-performance, aesthetically pleasing platforms for the real estate and luxury sectors.
+
+Portfolio: [Your Link] | LinkedIn: [Your Link]
