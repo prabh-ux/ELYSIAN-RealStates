@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Hero from './HomePage/Hero';
-import ShowCase from './HomePage/showCase';
+import ShowCase from './HomePage/ShowCase';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -18,7 +18,7 @@ export default function Home() {
             <Hero />
 
             {/* --- Properties Grid --- */}
-            <ShowCase />
+            <ShowCase/>
 
             {/* --- Aesthetic CTA --- */}
            <Footer/>
