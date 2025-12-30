@@ -1,4 +1,4 @@
-#🏰 ELYSIAN Real Estate
+🏰 ELYSIAN Real Estate
 A Premium Property Discovery & Management Platform
 
 ELYSIAN is a high-end frontend solution built for luxury real estate brokerages. It focuses on high-fidelity imagery, seamless property filtering, and a conversion-optimized user journey.
