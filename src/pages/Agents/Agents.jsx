@@ -4,51 +4,54 @@ import Header from '../Header';
 const Agents = () => {
     const [hoveredAgent, setHoveredAgent] = useState(null);
     const [selectedAgent, setSelectedAgent] = useState(null);
-      const [isSubmitted, setIsSubmitted] = useState(false);
- // 4. HANDLERS
-  const handleInquiry = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setSelectedAgent(null);
-      setIsSubmitted(false);
-    }, 2000);
-  };
-  const AGENTS = [
-    {
-      id: 1,
-      name: "Siddharth Malhotra",
-      email: "s.malhotra@elysian.com",
-      role: "Founder & Principal Architect",
-      specialty: "Luxury Penthouses",
-      img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
-      stats: { sold: 140, listings: 12 }
-    },
-    {
-      id: 2,
-      name: "Ananya Iyer",
-      email: "ananya.i@elysian.com",
-      role: "Senior Consultant",
-      specialty: "Coastal Estates",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
-      stats: { sold: 85, listings: 15 }
-    },
-    {
-      id: 3,
-      name: "Vikram Rathore",
-      email: "v.rathore@elysian.com",
-      role: "Investment Strategist",
-      specialty: "Commercial Land",
-      img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
-      stats: { sold: 210, listings: 8 }
-    }
-  ];
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    // 4. HANDLERS
+    const handleInquiry = (e) => {
+        e.preventDefault();
+        setIsSubmitted(true);
+        setTimeout(() => {
+            setSelectedAgent(null);
+            setIsSubmitted(false);
+        }, 2000);
+    };
+    const AGENTS = [
+        {
+            id: 1,
+            name: "Siddharth Malhotra",
+            email: "s.malhotra@elysian.com",
+            role: "Founder & Principal Architect",
+            specialty: "Luxury Penthouses",
+            img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
+            stats: { sold: 140, listings: 12 }
+        },
+        {
+            id: 2,
+            name: "Ananya Iyer",
+            email: "ananya.i@elysian.com",
+            role: "Senior Consultant",
+            specialty: "Coastal Estates",
+            img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+            stats: { sold: 85, listings: 15 }
+        },
+        {
+            id: 3,
+            name: "Vikram Rathore",
+            email: "v.rathore@elysian.com",
+            role: "Investment Strategist",
+            specialty: "Commercial Land",
+            img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
+            stats: { sold: 210, listings: 8 }
+        }
+    ];
 
     return (
         <div className="min-h-screen bg-[#FDFCF8] pt-32 pb-24 px-6 md:px-12">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto ">
 
-              
+                <div className='mb-16'>
+                    <h1 className="text-5xl md:text-7xl  font-light text-[#1A2F23]">Our <span className="font-bold italic text-[#C5A358]">Agents</span></h1>
+
+                </div>
 
                 {/* --- Agents Grid --- */}
                 <div className="grid md:grid-cols-3 gap-16 lg:gap-24">
@@ -67,12 +70,12 @@ const Agents = () => {
                                     <img
                                         src={agent.img}
                                         alt={agent.name}
-                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                                        className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700"
                                     />
                                 </div>
 
                                 {/* Quick Action Button */}
-                                <button onClick={() => setSelectedAgent(agent)} className="absolute bottom-0 right-0 bg-[#1A2F23] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button onClick={() => setSelectedAgent(agent)} className="absolute cursor-pointer bottom-0 right-0 bg-[#1A2F23] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     ✉
                                 </button>
                             </div>
