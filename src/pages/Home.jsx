@@ -10,8 +10,7 @@ export default function Home() {
 
     return (
         <div>
-            {/* --- Elegant Navigation --- */}
-            <Header />
+         
 
 
             {/* --- Refined Hero --- */}
@@ -21,7 +20,7 @@ export default function Home() {
             <ShowCase/>
 
             {/* --- Aesthetic CTA --- */}
-           <Footer/>
+          
         </div>
     )
 }
